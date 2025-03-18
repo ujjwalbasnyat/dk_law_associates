@@ -1,103 +1,148 @@
-import Image from "next/image";
+// pages/index.tsx
+'use client';
+import React, { useState, useRef, useEffect } from 'react';
+import { FaSearch } from 'react-icons/fa';
+import LawyerCard from '../../components/lawyercard'; // Using your provided path
+import lawyersData from '../../public/data/lawyer.json'; // Using your provided path
+
+// Define the Lawyer interface
+interface Lawyer {
+  id: number;
+  name: string;
+  specialization: string;
+  experience: string;
+  contact: {
+    phone: string;
+    email: string;
+  };
+  ratings: number;
+  reviews: number;
+  location: string;
+  fee: string;
+  bio: string;
+  profile_picture: string;
+}
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [searchTerm, setSearchTerm] = useState<string>(''); // Search state
+  const [currentPage, setCurrentPage] = useState<number>(1); // Pagination state
+  const cardsPerPage = 8; // Number of cards per page
+  const cardGridRef = useRef<HTMLDivElement>(null); // Ref to the card grid
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  // Filter lawyers based on search term (case-insensitive)
+  const filteredLawyers = lawyersData.filter((lawyer: Lawyer) =>
+    lawyer.specialization.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Calculate total pages
+  const totalPages = Math.ceil(filteredLawyers.length / cardsPerPage);
+
+  // Reset currentPage to 1 when searchTerm changes
+  useEffect(() => {
+    setCurrentPage(1); // Reset to page 1 whenever searchTerm updates
+  }, [searchTerm]);
+
+  // Get the lawyers for the current page
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const currentLawyers = filteredLawyers.slice(indexOfFirstCard, indexOfLastCard);
+
+  // Function to scroll to the top of the card grid
+  const scrollToTop = () => {
+    if (cardGridRef.current) {
+      cardGridRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  // Pagination handlers with scroll
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+      scrollToTop();
+    }
+  };
+
+  const goToPreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      scrollToTop();
+    }
+  };
+
+  const goToPage = (page: number) => {
+    setCurrentPage(page);
+    scrollToTop();
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-100 py-10">
+      <div className="text-center">
+      <h1 className="text-4xl font-bold text-gray-800 mb-6">Find a Lawyer</h1>
+      <div className="relative w-full max-w-md mx-auto">
+        <input
+          type="text"
+          placeholder="Search lawyer with specialization"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[var(--accent-color)] text-[var(--foreground-color)] placeholder-gray-400 text-sm sm:text-base"
+        />
+        <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+      </div>
+    </div>
+      <div
+        ref={cardGridRef} // Attach ref to the grid container
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 mt-10"
+      >
+        {currentLawyers.map((lawyer: Lawyer) => (
+          <LawyerCard key={lawyer.id} lawyer={lawyer} />
+        ))}
+      </div>
+
+      {/* Pagination Controls */}
+      {filteredLawyers.length > 0 && (
+        <div className="flex justify-center items-center mt-10 space-x-4">
+          <button
+            onClick={goToPreviousPage}
+            disabled={currentPage === 1}
+            className={`px-4 py-2 rounded-lg text-[var(--foreground-color)] ${
+              currentPage === 1
+                ? 'bg-gray-400 cursor-not-allowed text-gray-500'
+                : 'bg-[var(--accent-color)] text-[var(--foreground-color)] hover:opacity-80 transition'
+            } transition duration-200`}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Previous
+          </button>
+
+          {/* Page Numbers */}
+          <div className="flex space-x-2">
+            {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => goToPage(page)}
+                className={`px-3 py-1 rounded-lg ${
+                  currentPage === page
+                    ? 'bg-[var(--accent-color)] text-[var(--foreground-color)] hover:opacity-80 transition'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                } transition duration-200`}
+              >
+                {page}
+              </button>
+            ))}
+          </div>
+
+          <button
+            onClick={goToNextPage}
+            disabled={currentPage === totalPages}
+            className={`px-4 py-2 rounded-lg text-[var(--foreground-color)] ${
+              currentPage === totalPages
+                ? 'bg-gray-400 cursor-not-allowed text-gray-500'
+                : 'bg-[var(--accent-color)] text-[var(--foreground-color)] hover:opacity-80 transition'
+            } transition duration-200`}
           >
-            Read our docs
-          </a>
+            Next
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      )}
     </div>
   );
 }
