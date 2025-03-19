@@ -4,6 +4,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import LawyerCard from './lawyercard'; // Using your provided path
 import lawyersData from './lawyer.json'; // Using your provided path
+import Card from './components/card'; // Using your provided path
+import cardData from './data/card.json';
 
 // Define the Lawyer interface
 interface Lawyer {
@@ -75,13 +77,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-10">
+    <div className="min-h-screen bg-[var(--background-color)] py-10">
       <div className="text-center">
       <h1 className="text-4xl font-bold text-gray-800 mb-6">Find a Lawyer</h1>
       <div className="relative w-full max-w-md mx-auto">
         <input
           type="text"
-          placeholder="Search lawyer with specialization"
+          placeholder="Find lawyer with specialization"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full p-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[var(--accent-color)] text-[var(--foreground-color)] placeholder-gray-400 text-sm sm:text-base"
@@ -100,7 +102,7 @@ export default function Home() {
 
       {/* Pagination Controls */}
       {filteredLawyers.length > 0 && (
-        <div className="flex justify-center items-center mt-10 space-x-4">
+        <div className="flex justify-center items-center mt-10 space-x-4 py-4">
           <button
             onClick={goToPreviousPage}
             disabled={currentPage === 1}
@@ -143,6 +145,17 @@ export default function Home() {
           </button>
         </div>
       )}
+      <main className="min-h-screen bg-gray-100 flex items-center justify-center ">
+      <div className="flex flex-wrap gap-4">
+        {cardData.cards.map((card) => (
+          <Card
+            key={card.id}
+            header={card.header}
+            content={card.content}
+          />
+        ))}
+      </div>
+    </main>
     </div>
   );
 }

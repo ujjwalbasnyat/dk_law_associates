@@ -1,0 +1,33 @@
+{
+    "cards": [
+      {
+        "id": "card-1",
+        "icon": "FaRocket",
+        "header": "Launch Project",
+        "content": "Start your next big idea with our powerful tools and resources",
+        "category": "Development",
+        "status": "active"
+      },
+      {
+        "id": "card-2",
+        "icon": "FaRocket",
+        "header": "Team Collaboration",
+        "content": "Work together seamlessly with real-time updates",
+        "category": "Teamwork",
+        "status": "active"
+      },
+      {
+        "id": "card-3",
+        "icon": "FaRocket",
+        "header": "Analytics Dashboard",
+        "content": "Track your progress with detailed insights",
+        "category": "Analytics",
+        "status": "coming_soon"
+      }
+    ],
+    "metadata": {
+      "totalCards": 3,
+      "lastUpdated": "2025-03-19",
+      "version": "1.0"
+    }
+  }
