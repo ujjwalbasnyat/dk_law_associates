@@ -77,7 +77,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--background-color)] py-10">
+    <div className="min-h-screen bg-[var(--background-color)] pt-10">
       <div className="text-center">
       <h1 className="text-4xl font-bold text-gray-800 mb-6">Find a Lawyer</h1>
       <div className="relative w-full max-w-md mx-auto">
@@ -145,17 +145,28 @@ export default function Home() {
           </button>
         </div>
       )}
-      <main className="min-h-screen bg-gray-100 flex items-center justify-center ">
-      <div className="flex flex-wrap gap-4">
-        {cardData.cards.map((card) => (
-          <Card
-            key={card.id}
-            header={card.header}
-            content={card.content}
-          />
-        ))}
+      <section className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 md:mb-10">
+          Our Services
+        </h1>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+          Discover the range of services we offer to help you achieve your goals.
+        </p>
       </div>
-    </main>
+
+      <main className="container mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {cardData.cards.map((card) => (
+            <Card
+              key={card.id}
+              header={card.header}
+              content={card.content}
+            />
+          ))}
+        </div>
+      </main>
+    </section>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 
 // Define the props interface
-interface CardProps {// Literal type for the icon prop, optional
+interface CardProps {
   header: string;
   content: string;
 }
