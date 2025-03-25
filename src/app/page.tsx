@@ -2,8 +2,8 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import LawyerCard from '../../components/lawyercard'; // Using your provided path
-import lawyersData from '../../public/data/lawyer.json'; // Using your provided path
+import LawyerCard from './lawyercard'; // Using your provided path
+import lawyersData from './lawyer.json'; // Using your provided path
 
 // Define the Lawyer interface
 interface Lawyer {

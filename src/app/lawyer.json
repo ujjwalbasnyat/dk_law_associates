@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "specialization": "Criminal Lawyer",
+        "experience": "12 years",
+        "contact": {
+          "phone": "+1 234 567 890",
+          "email": "johndoe@example.com"
+        },
+        "ratings": 4.8,
+        "reviews": 120,
+        "location": "New York, USA",
+        "fee": "$200 per session",
+        "bio": "Experienced criminal lawyer with a strong track record of successful cases.",
+        "profile_picture": "https://randomuser.me/api/portraits/men/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Sarah Smith",
+        "specialization": "Family Lawyer",
+        "experience": "8 years",
+        "contact": {
+          "phone": "+1 345 678 901",
+          "email": "sarahsmith@example.com"
+        },
+        "ratings": 4.6,
+        "reviews": 95,
+        "location": "Los Angeles, USA",
+        "fee": "$180 per session",
+        "bio": "Compassionate family lawyer specializing in divorce and custody cases.",
+        "profile_picture": "https://randomuser.me/api/portraits/women/2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Michael Brown",
+        "specialization": "Corporate Lawyer",
+        "experience": "15 years",
+        "contact": {
+          "phone": "+1 456 789 012",
+          "email": "michaelbrown@example.com"
+        },
+        "ratings": 4.9,
+        "reviews": 150,
+        "location": "Chicago, USA",
+        "fee": "$250 per session",
+        "bio": "Expert in mergers, acquisitions, and corporate governance.",
+        "profile_picture": "https://randomuser.me/api/portraits/men/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Emily Davis",
+        "specialization": "Immigration Lawyer",
+        "experience": "10 years",
+        "contact": {
+          "phone": "+1 567 890 123",
+          "email": "emilydavis@example.com"
+        },
+        "ratings": 4.7,
+        "reviews": 110,
+        "location": "Miami, USA",
+        "fee": "$190 per session",
+        "bio": "Dedicated to helping clients navigate complex immigration laws.",
+        "profile_picture": "https://randomuser.me/api/portraits/women/4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Robert Johnson",
+        "specialization": "Tax Lawyer",
+        "experience": "20 years",
+        "contact": {
+          "phone": "+1 678 901 234",
+          "email": "robertjohnson@example.com"
+        },
+        "ratings": 4.9,
+        "reviews": 200,
+        "location": "Houston, USA",
+        "fee": "$300 per session",
+        "bio": "Seasoned tax law expert with extensive IRS experience.",
+        "profile_picture": "https://randomuser.me/api/portraits/men/5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Lisa Patel",
+        "specialization": "Personal Injury Lawyer",
+        "experience": "7 years",
+        "contact": {
+          "phone": "+1 789 012 345",
+          "email": "lisapatel@example.com"
+        },
+        "ratings": 4.5,
+        "reviews": 85,
+        "location": "Phoenix, USA",
+        "fee": "$175 per session",
+        "bio": "Fighting for justice in personal injury and accident cases.",
+        "profile_picture": "https://randomuser.me/api/portraits/women/6.jpg"
+      },
+      {
+        "id": 7,
+        "name": "David Kim",
+        "specialization": "Intellectual Property Lawyer",
+        "experience": "9 years",
+        "contact": {
+          "phone": "+1 890 123 456",
+          "email": "davidkim@example.com"
+        },
+        "ratings": 4.8,
+        "reviews": 130,
+        "location": "San Francisco, USA",
+        "fee": "$220 per session",
+        "bio": "Specialist in patents, trademarks, and copyright law.",
+        "profile_picture": "https://randomuser.me/api/portraits/men/7.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Aisha Khan",
+        "specialization": "Employment Lawyer",
+        "experience": "11 years",
+        "contact": {
+          "phone": "+44 20 1234 5678",
+          "email": "aishakhan@example.com"
+        },
+        "ratings": 4.7,
+        "reviews": 105,
+        "location": "London, UK",
+        "fee": "£180 per session",
+        "bio": "Advocate for employee rights and workplace fairness.",
+        "profile_picture": "https://randomuser.me/api/portraits/women/8.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Carlos Rivera",
+        "specialization": "Real Estate Lawyer",
+        "experience": "14 years",
+        "contact": {
+          "phone": "+1 901 234 567",
+          "email": "carlosrivera@example.com"
+        },
+        "ratings": 4.6,
+        "reviews": 140,
+        "location": "Dallas, USA",
+        "fee": "$210 per session",
+        "bio": "Experienced in property disputes and real estate transactions.",
+        "profile_picture": "https://randomuser.me/api/portraits/men/9.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Sophie Laurent",
+        "specialization": "Environmental Lawyer",
+        "experience": "6 years",
+        "contact": {
+          "phone": "+33 1 23 45 67 89",
+          "email": "sophielaurent@example.com"
+        },
+        "ratings": 4.4,
+        "reviews": 75,
+        "location": "Paris, France",
+        "fee": "€160 per session",
+        "bio": "Passionate about environmental protection and sustainability laws.",
+        "profile_picture": "https://randomuser.me/api/portraits/women/10.jpg"
+      },
+    {
+      "id": 11,
+      "name": "James Carter",
+      "specialization": "Bankruptcy Lawyer",
+      "experience": "13 years",
+      "contact": {
+        "phone": "+1 213 456 789",
+        "email": "jamescarter@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 115,
+      "location": "Atlanta, USA",
+      "fee": "$195 per session",
+      "bio": "Helping clients navigate financial distress with expertise.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Olivia Nguyen",
+      "specialization": "Health Law Attorney",
+      "experience": "9 years",
+      "contact": {
+        "phone": "+1 321 654 987",
+        "email": "olivianguyen@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 100,
+      "location": "Boston, USA",
+      "fee": "$230 per session",
+      "bio": "Specializing in healthcare regulations and medical malpractice.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Thomas Müller",
+      "specialization": "International Trade Lawyer",
+      "experience": "16 years",
+      "contact": {
+        "phone": "+49 30 1234 5678",
+        "email": "thomasmuller@example.com"
+      },
+      "ratings": 4.9,
+      "reviews": 180,
+      "location": "Berlin, Germany",
+      "fee": "€250 per session",
+      "bio": "Expert in global trade agreements and tariffs.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Priya Sharma",
+      "specialization": "Civil Rights Lawyer",
+      "experience": "10 years",
+      "contact": {
+        "phone": "+91 22 3456 7890",
+        "email": "priyasharma@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 90,
+      "location": "Mumbai, India",
+      "fee": "₹12,000 per session",
+      "bio": "Advocating for equality and justice in civil rights cases.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Henry Brooks",
+      "specialization": "Entertainment Lawyer",
+      "experience": "11 years",
+      "contact": {
+        "phone": "+1 818 987 654",
+        "email": "henrybrooks@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 125,
+      "location": "Los Angeles, USA",
+      "fee": "$240 per session",
+      "bio": "Representing artists and studios in the entertainment industry.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Clara Rossi",
+      "specialization": "Maritime Lawyer",
+      "experience": "8 years",
+      "contact": {
+        "phone": "+39 06 1234 5678",
+        "email": "clararossi@example.com"
+      },
+      "ratings": 4.5,
+      "reviews": 80,
+      "location": "Rome, Italy",
+      "fee": "€170 per session",
+      "bio": "Specializing in shipping disputes and maritime law.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Liam O’Connor",
+      "specialization": "Sports Lawyer",
+      "experience": "14 years",
+      "contact": {
+        "phone": "+44 20 5678 9012",
+        "email": "liamoconnor@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 135,
+      "location": "London, UK",
+      "fee": "£200 per session",
+      "bio": "Expert in athlete contracts and sports regulations.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Fatima Ali",
+      "specialization": "Elder Law Attorney",
+      "experience": "7 years",
+      "contact": {
+        "phone": "+1 619 345 678",
+        "email": "fatimaali@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 70,
+      "location": "San Diego, USA",
+      "fee": "$185 per session",
+      "bio": "Dedicated to elder care and estate planning.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Gabriel Silva",
+      "specialization": "Construction Lawyer",
+      "experience": "12 years",
+      "contact": {
+        "phone": "+55 11 2345 6789",
+        "email": "gabrielsilva@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 110,
+      "location": "São Paulo, Brazil",
+      "fee": "R$700 per session",
+      "bio": "Handling construction disputes and contract negotiations.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Emma Wilson",
+      "specialization": "Cybersecurity Lawyer",
+      "experience": "6 years",
+      "contact": {
+        "phone": "+1 415 678 901",
+        "email": "emmawilson@example.com"
+      },
+      "ratings": 4.5,
+      "reviews": 65,
+      "location": "Seattle, USA",
+      "fee": "$210 per session",
+      "bio": "Focused on data breaches and cyber law compliance.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/20.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Noah Jensen",
+      "specialization": "Criminal Lawyer",
+      "experience": "18 years",
+      "contact": {
+        "phone": "+1 702 123 456",
+        "email": "noahjensen@example.com"
+      },
+      "ratings": 4.9,
+      "reviews": 190,
+      "location": "Las Vegas, USA",
+      "fee": "$270 per session",
+      "bio": "Veteran defender in high-stakes criminal cases.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/21.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Isabella Gomez",
+      "specialization": "Family Lawyer",
+      "experience": "9 years",
+      "contact": {
+        "phone": "+34 91 234 5678",
+        "email": "isabellagomez@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 95,
+      "location": "Madrid, Spain",
+      "fee": "€180 per session",
+      "bio": "Supporting families through divorce and child welfare cases.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/22.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Ethan Lee",
+      "specialization": "Corporate Lawyer",
+      "experience": "15 years",
+      "contact": {
+        "phone": "+82 2 3456 7890",
+        "email": "ethanlee@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 160,
+      "location": "Seoul, South Korea",
+      "fee": "₩300,000 per session",
+      "bio": "Advising corporations on compliance and growth strategies.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/23.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Mia Torres",
+      "specialization": "Immigration Lawyer",
+      "experience": "8 years",
+      "contact": {
+        "phone": "+1 305 456 789",
+        "email": "miatorres@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 105,
+      "location": "Miami, USA",
+      "fee": "$200 per session",
+      "bio": "Assisting immigrants with visas and citizenship applications.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/24.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Lucas Wright",
+      "specialization": "Tax Lawyer",
+      "experience": "17 years",
+      "contact": {
+        "phone": "+1 512 789 123",
+        "email": "lucaswright@example.com"
+      },
+      "ratings": 4.9,
+      "reviews": 175,
+      "location": "Austin, USA",
+      "fee": "$280 per session",
+      "bio": "Resolving complex tax disputes for individuals and businesses.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/25.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Zoe Martin",
+      "specialization": "Personal Injury Lawyer",
+      "experience": "5 years",
+      "contact": {
+        "phone": "+1 720 345 678",
+        "email": "zoemartin@example.com"
+      },
+      "ratings": 4.4,
+      "reviews": 60,
+      "location": "Denver, USA",
+      "fee": "$165 per session",
+      "bio": "Committed to securing compensation for injury victims.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/26.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Alexander Petrov",
+      "specialization": "Intellectual Property Lawyer",
+      "experience": "13 years",
+      "contact": {
+        "phone": "+7 495 123 4567",
+        "email": "alexanderpetrov@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 145,
+      "location": "Moscow, Russia",
+      "fee": "₽15,000 per session",
+      "bio": "Protecting innovations and creative works.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/27.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Chloe Dupont",
+      "specialization": "Employment Lawyer",
+      "experience": "10 years",
+      "contact": {
+        "phone": "+33 1 5678 9012",
+        "email": "chloedupont@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 120,
+      "location": "Lyon, France",
+      "fee": "€190 per session",
+      "bio": "Championing fair labor practices and employee rights.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/28.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Diego Morales",
+      "specialization": "Real Estate Lawyer",
+      "experience": "11 years",
+      "contact": {
+        "phone": "+52 55 1234 5678",
+        "email": "diegomorales@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 100,
+      "location": "Mexico City, Mexico",
+      "fee": "MX$3,500 per session",
+      "bio": "Expert in property law and real estate development.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/29.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Amelia Clark",
+      "specialization": "Environmental Lawyer",
+      "experience": "7 years",
+      "contact": {
+        "phone": "+61 2 3456 7890",
+        "email": "ameliaclark@example.com"
+      },
+      "ratings": 4.5,
+      "reviews": 85,
+      "location": "Sydney, Australia",
+      "fee": "A$180 per session",
+      "bio": "Advocating for sustainable policies and environmental justice.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/30.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Samuel Hayes",
+      "specialization": "Bankruptcy Lawyer",
+      "experience": "14 years",
+      "contact": {
+        "phone": "+1 404 567 890",
+        "email": "samuelhayes@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 130,
+      "location": "Charlotte, USA",
+      "fee": "$220 per session",
+      "bio": "Guiding clients through bankruptcy with compassion.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/31.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Julia Kim",
+      "specialization": "Health Law Attorney",
+      "experience": "8 years",
+      "contact": {
+        "phone": "+1 206 789 123",
+        "email": "juliakim@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 90,
+      "location": "Portland, USA",
+      "fee": "$200 per session",
+      "bio": "Specializing in healthcare compliance and litigation.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/32.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Hiroshi Tanaka",
+      "specialization": "International Trade Lawyer",
+      "experience": "15 years",
+      "contact": {
+        "phone": "+81 3 4567 8901",
+        "email": "hiroshitanaka@example.com"
+      },
+      "ratings": 4.9,
+      "reviews": 170,
+      "location": "Tokyo, Japan",
+      "fee": "¥30,000 per session",
+      "bio": "Navigating international trade laws for businesses.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/33.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Layla Hassan",
+      "specialization": "Civil Rights Lawyer",
+      "experience": "9 years",
+      "contact": {
+        "phone": "+20 2 3456 7890",
+        "email": "laylahassan@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 95,
+      "location": "Cairo, Egypt",
+      "fee": "EGP 2,500 per session",
+      "bio": "Fighting for human rights and social justice.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/34.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Mason Reed",
+      "specialization": "Entertainment Lawyer",
+      "experience": "12 years",
+      "contact": {
+        "phone": "+1 615 123 456",
+        "email": "masonreed@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 140,
+      "location": "Nashville, USA",
+      "fee": "$250 per session",
+      "bio": "Supporting musicians and entertainers with legal advice.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/35.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Elena Bianchi",
+      "specialization": "Maritime Lawyer",
+      "experience": "10 years",
+      "contact": {
+        "phone": "+30 21 1234 5678",
+        "email": "elenabianchi@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 110,
+      "location": "Athens, Greece",
+      "fee": "€185 per session",
+      "bio": "Expert in maritime trade and shipping regulations.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/36.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Jack Sullivan",
+      "specialization": "Sports Lawyer",
+      "experience": "13 years",
+      "contact": {
+        "phone": "+1 312 567 890",
+        "email": "jacksullivan@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 125,
+      "location": "Chicago, USA",
+      "fee": "$230 per session",
+      "bio": "Negotiating contracts for professional athletes.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/37.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Sofia Mendes",
+      "specialization": "Elder Law Attorney",
+      "experience": "6 years",
+      "contact": {
+        "phone": "+351 21 3456 789",
+        "email": "sofiamendes@example.com"
+      },
+      "ratings": 4.5,
+      "reviews": 70,
+      "location": "Lisbon, Portugal",
+      "fee": "€160 per session",
+      "bio": "Helping seniors with estate and healthcare planning.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/38.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Omar Farooq",
+      "specialization": "Construction Lawyer",
+      "experience": "11 years",
+      "contact": {
+        "phone": "+971 4 567 8901",
+        "email": "omarfarooq@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 115,
+      "location": "Dubai, UAE",
+      "fee": "AED 800 per session",
+      "bio": "Resolving disputes in large-scale construction projects.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/39.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Ava Patel",
+      "specialization": "Cybersecurity Lawyer",
+      "experience": "7 years",
+      "contact": {
+        "phone": "+1 408 123 456",
+        "email": "avapatel@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 80,
+      "location": "San Jose, USA",
+      "fee": "$225 per session",
+      "bio": "Protecting clients from cyber threats and legal risks.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/40.jpg"
+    },
+    {
+      "id": 41,
+      "name": "William Foster",
+      "specialization": "Criminal Lawyer",
+      "experience": "19 years",
+      "contact": {
+        "phone": "+1 214 567 890",
+        "email": "williamfoster@example.com"
+      },
+      "ratings": 4.9,
+      "reviews": 200,
+      "location": "Dallas, USA",
+      "fee": "$290 per session",
+      "bio": "Renowned for defending complex criminal cases.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/41.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Charlotte Evans",
+      "specialization": "Family Lawyer",
+      "experience": "8 years",
+      "contact": {
+        "phone": "+44 161 234 5678",
+        "email": "charlotteevans@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 90,
+      "location": "Manchester, UK",
+      "fee": "£175 per session",
+      "bio": "Empathetic advocate for family law clients.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/42.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Daniel Ortiz",
+      "specialization": "Corporate Lawyer",
+      "experience": "16 years",
+      "contact": {
+        "phone": "+1 212 345 678",
+        "email": "danielortiz@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 165,
+      "location": "New York, USA",
+      "fee": "$260 per session",
+      "bio": "Strategic advisor for corporate legal matters.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/43.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Lina Zhang",
+      "specialization": "Immigration Lawyer",
+      "experience": "9 years",
+      "contact": {
+        "phone": "+86 10 5678 9012",
+        "email": "linazhang@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 100,
+      "location": "Beijing, China",
+      "fee": "¥1,800 per session",
+      "bio": "Assisting with international visas and residency.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Jacob Meyer",
+      "specialization": "Tax Lawyer",
+      "experience": "14 years",
+      "contact": {
+        "phone": "+1 303 123 456",
+        "email": "jacobmeyer@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 150,
+      "location": "Boulder, USA",
+      "fee": "$245 per session",
+      "bio": "Expert in tax planning and dispute resolution.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/45.jpg"
+    },
+    {
+      "id": 46,
+      "name": "Nadia Ivanov",
+      "specialization": "Personal Injury Lawyer",
+      "experience": "7 years",
+      "contact": {
+        "phone": "+7 812 345 6789",
+        "email": "nadiaivanov@example.com"
+      },
+      "ratings": 4.5,
+      "reviews": 75,
+      "location": "St. Petersburg, Russia",
+      "fee": "₽12,000 per session",
+      "bio": "Securing justice for accident victims.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/46.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Ryan Phillips",
+      "specialization": "Intellectual Property Lawyer",
+      "experience": "12 years",
+      "contact": {
+        "phone": "+1 617 567 890",
+        "email": "ryanphillips@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 135,
+      "location": "Boston, USA",
+      "fee": "$235 per session",
+      "bio": "Safeguarding intellectual assets for creators.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/47.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Grace Osei",
+      "specialization": "Employment Lawyer",
+      "experience": "10 years",
+      "contact": {
+        "phone": "+233 30 234 5678",
+        "email": "graceosei@example.com"
+      },
+      "ratings": 4.6,
+      "reviews": 95,
+      "location": "Accra, Ghana",
+      "fee": "GHS 1,200 per session",
+      "bio": "Defending workers’ rights in employment disputes.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/48.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Mateo Vargas",
+      "specialization": "Real Estate Lawyer",
+      "experience": "13 years",
+      "contact": {
+        "phone": "+57 1 3456 7890",
+        "email": "mateovargas@example.com"
+      },
+      "ratings": 4.8,
+      "reviews": 140,
+      "location": "Bogotá, Colombia",
+      "fee": "COP 600,000 per session",
+      "bio": "Advising on property deals and land disputes.",
+      "profile_picture": "https://randomuser.me/api/portraits/men/49.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Harper Green",
+      "specialization": "Environmental Lawyer",
+      "experience": "8 years",
+      "contact": {
+        "phone": "+1 503 123 456",
+        "email": "harpergreen@example.com"
+      },
+      "ratings": 4.7,
+      "reviews": 85,
+      "location": "Portland, USA",
+      "fee": "$205 per session",
+      "bio": "Promoting environmental conservation through law.",
+      "profile_picture": "https://randomuser.me/api/portraits/women/50.jpg"
+    }
+  ]
