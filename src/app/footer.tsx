@@ -5,7 +5,7 @@ import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--background-color)] text-[var(--foreground-color)] py-8 px-4 md:px-16">
+    <footer className="bg-slate-100 text-[var(--foreground-color)] py-8 px-4 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Company Info */}
         <div>
@@ -22,12 +22,12 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-bold text-[var(--accent-color)]">Quick Links</h2>
           <ul className="mt-2 space-y-2">
-            <li><Link href="#" className="hover:text-[var(--accent-color)]">Home</Link></li>
-            <li><Link href="#" className="hover:text-[var(--accent-color)]">About Us</Link></li>
-            <li><Link href="#" className="hover:text-[var(--accent-color)]">Practice Areas</Link></li>
+            <li><Link href="/" className="hover:text-[var(--accent-color)]">Home</Link></li>
+            <li><Link href="about_Us" className="hover:text-[var(--accent-color)]">About Us</Link></li>
+            <li><Link href="practice_areas" className="hover:text-[var(--accent-color)]">Practice Areas</Link></li>
             <li><Link href="#" className="hover:text-[var(--accent-color)]">Our Team</Link></li>
             <li><Link href="#" className="hover:text-[var(--accent-color)]">Blog</Link></li>
-            <li><Link href="#" className="hover:text-[var(--accent-color)]">Contact Us</Link></li>
+            <li><Link href="contact_us" className="hover:text-[var(--accent-color)]">Contact Us</Link></li>
           </ul>
         </div>
 
@@ -44,7 +44,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="mt-8 text-center border-t border-[var(--border-color)] pt-4">
-        <p className="text-sm">&copy; {new Date().getFullYear()} Dk law Associates. All Rights Reserved.</p>
+        <p className="text-sm text-[var(--accent-color)]">&copy; {new Date().getFullYear()} Dk law Associates. All Rights Reserved.</p>
       </div>
     </footer>
   );

@@ -1,0 +1,57 @@
+{
+  "cards": [
+    {
+      "id": "card-1",
+      "icon": "FaRocket",
+      "header": "Company Registration",
+      "content": "Enjoy our fast and easy service to register your company",
+      "category": "Development",
+      "status": "active"
+    },
+    {
+      "id": "card-2",
+      "icon": "FaRocket",
+      "header": "Trademark Registration",
+      "content": "Our experts will help you protect your brand",
+      "category": "Teamwork",
+      "status": "active"
+    },
+    {
+      "id": "card-3",
+      "icon": "FaRocket",
+      "header": "Accounting & Taxation",
+      "content": "Management of your accounting and taxation",
+      "category": "Analytics",
+      "status": "coming_soon"
+    },
+    {
+      "id": "card-4",
+      "icon": "FaRocket",
+      "header": "Business Consulting",
+      "content": "Get expert advice to grow your business efficiently",
+      "category": "Consulting",
+      "status": "active"
+    },
+    {
+      "id": "card-5",
+      "icon": "FaRocket",
+      "header": "Payroll Services",
+      "content": "Streamline your payroll process with our reliable services",
+      "category": "Finance",
+      "status": "coming_soon"
+    },
+    {
+      "id": "card-6",
+      "icon": "FaRocket",
+      "header": "Legal Compliance",
+      "content": "Ensure your business meets all legal requirements",
+      "category": "Compliance",
+      "status": "active"
+    }
+  ],
+  "metadata": {
+    "totalCards": 6,
+    "lastUpdated": "2025-03-19",
+    "version": "1.1"
+  }
+}
